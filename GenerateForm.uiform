@@ -1,0 +1,153 @@
+﻿{
+  "Metadata": {
+    "Id": "52903d7d-cfc3-4ad1-92f0-1159c2e6d8e8",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "NewForm",
+    "Theme": "Cyborg",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "collapsible": false,
+        "key": "panel",
+        "type": "panel",
+        "label": "Panel",
+        "input": false,
+        "tableView": false,
+        "components": [
+          {
+            "tag": "h1",
+            "content": "Generate Form",
+            "key": "label",
+            "input": false,
+            "tableView": false,
+            "label": "Label",
+            "type": "label"
+          },
+          {
+            "components": [
+              {
+                "label": "Tab 1",
+                "key": "tab1",
+                "components": [
+                  {
+                    "label": "Model",
+                    "labelPosition": "left-left",
+                    "tableView": true,
+                    "key": "model",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "Title",
+                    "labelPosition": "left-left",
+                    "tableView": true,
+                    "key": "title",
+                    "type": "textfield",
+                    "labelWidth": 30,
+                    "input": true
+                  },
+                  {
+                    "label": "Price",
+                    "labelPosition": "left-left",
+                    "tableView": true,
+                    "key": "price",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "Category",
+                    "labelPosition": "left-left",
+                    "widget": "choicesjs",
+                    "tableView": true,
+                    "data": {
+                      "values": [
+                        {
+                          "label": "Electronics & computers",
+                          "value": "electronicsComputers"
+                        },
+                        {
+                          "label": "more",
+                          "value": "more"
+                        }
+                      ]
+                    },
+                    "readOnlyValue": true,
+                    "useExactSearch": true,
+                    "key": "category",
+                    "type": "select",
+                    "input": true
+                  },
+                  {
+                    "label": "Condition",
+                    "labelPosition": "left-left",
+                    "widget": "choicesjs",
+                    "tableView": true,
+                    "data": {
+                      "values": [
+                        {
+                          "label": "New",
+                          "value": "new"
+                        },
+                        {
+                          "label": "Used - Like New",
+                          "value": "usedLikeNew"
+                        },
+                        {
+                          "label": "Used - Good",
+                          "value": "usedGood"
+                        },
+                        {
+                          "label": "Used - Fair",
+                          "value": "usedFair"
+                        }
+                      ]
+                    },
+                    "readOnlyValue": true,
+                    "useExactSearch": true,
+                    "key": "condition",
+                    "type": "select",
+                    "input": true
+                  },
+                  {
+                    "label": "Brand",
+                    "tableView": true,
+                    "key": "brand",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "Description",
+                    "tableView": true,
+                    "key": "description",
+                    "type": "textarea",
+                    "input": true
+                  },
+                  {
+                    "label": "Submit",
+                    "action": "event",
+                    "showValidations": false,
+                    "tableView": false,
+                    "key": "submit",
+                    "type": "button",
+                    "input": true
+                  }
+                ]
+              }
+            ],
+            "key": "tabs",
+            "type": "tabs",
+            "input": false,
+            "tableView": false,
+            "label": "Tabs"
+          }
+        ]
+      }
+    ]
+  }
+}
